@@ -1,0 +1,174 @@
+html {
+  padding: auto;
+  margin: auto;
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif; }
+
+/*------STYLE FOR THE HEADER-------------*/
+.logo {
+  margin-top: 10px;
+  margin-left: 50px; }
+
+@media only screen and (max-width: 500px) {
+  .teammoto-logo {
+    text-align: center; } }
+
+.vehicle-nav-wrapper {
+  background: #666666;
+  height: 80px;
+  line-height: 80px;
+  width: 100%; }
+
+.menu {
+  float: right;
+  margin: 0 30px 0 0; }
+  @media only screen and (max-width: 1000px) {
+    .menu {
+      display: none; } }
+  @media only screen and (max-width: 500px) {
+    .menu {
+      display: none; } }
+
+.vnav-link {
+  color: white;
+  font-size: 16px;
+  margin: 0 10px;
+  line-height: 80px;
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  text-decoration: none; }
+  @media only screen and (max-width: 500px) {
+    .vnav-link {
+      display: block;
+      width: 100%;
+      margin: 0; } }
+
+.active,
+a:hover {
+  background: #666666; }
+
+.banner-wrapper {
+  height: 50px;
+  background: grey; }
+
+.banner-list {
+  list-style-type: none;
+  text-align: center;
+  border-radius: 5px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 100px; }
+  @media only screen and (max-width: 1000px) {
+    .banner-list {
+      margin-right: 50px; } }
+  @media only screen and (max-width: 500px) {
+    .banner-list {
+      margin-left: 10px; } }
+
+.banner-item {
+  display: inline;
+  margin: 5px; }
+
+.btn {
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  background: grey; }
+
+/***---STYLE FOR CONTENT PART-----***/
+.content-section-wrapper {
+  margin: 10px 50px 0px 50px; }
+
+.path-wrapper {
+  font-size: 12px; }
+
+.section-heading-wrapper {
+  margin-top: 30px; }
+
+.subheading-section {
+  font-size: 24px; }
+
+.section-text {
+  font-size: 14px; }
+
+.parent-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  width: auto; }
+  @supports (grid-area: auto) {
+    .parent-wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 5rem;
+      grid-row-gap: 50px; } }
+  @media only screen and (max-width: 1000px) {
+    @supports (grid-area: auto) {
+      .parent-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 5rem;
+        grid-row-gap: 50px; } } }
+  @media only screen and (max-width: 500px) {
+    @supports (grid-area: auto) {
+      .parent-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 50px; } } }
+
+.sub-parent-wrapper {
+  height: 150px;
+  width: 21.25%;
+  margin-bottom: 10px; }
+  @supports (grid-area: auto) {
+    .sub-parent-wrapper {
+      width: 100%; } }
+  .sub-parent-wrapper:nth-child(n) {
+    margin-right: 5%; }
+  .sub-parent-wrapper:nth-child(4n) {
+    margin-right: 0; }
+
+.child {
+  background-color: #666666;
+  height: 130px;
+  width: 13.75%;
+  margin-bottom: 10px; }
+  @supports (grid-area: auto) {
+    .child {
+      width: 100%; } }
+  .child:nth-child(n) {
+    margin-right: 15%; }
+  .child:nth-child(4n) {
+    margin-right: 0; }
+
+.grid-section-text {
+  text-align: left;
+  height: 10px;
+  width: 21.25%;
+  margin-bottom: 10px; }
+  @supports (grid-area: auto) {
+    .grid-section-text {
+      width: 100%; } }
+  .grid-section-text:nth-child(n) {
+    margin-right: 5%; }
+  .grid-section-text:nth-child(4n) {
+    margin-right: 0; }
+
+/*---------STYLE FOR THE FOOTER--------*/
+.footer-section {
+  margin-top: 2rem;
+  background: #666666;
+  height: 40px;
+  width: 100%;
+  bottom: 0; }
